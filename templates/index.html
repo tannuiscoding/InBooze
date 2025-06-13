@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Upload Your Gmail Export (.mbox)</h2>
+<form method="POST" enctype="multipart/form-data">
+  <input type="file" name="email_file" accept=".mbox" required>
+  <button type="submit">Upload & Ingest</button>
+</form>
+{% endblock %}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inbooze - Smart Email Summarizer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>📬 Inbooze</h1>
+    <p class="tagline">Summarize your inbox. Smart. Simple. Secure.</p>
+    <hr/>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <footer>
+    <hr/>
+    <p>&copy; 2025 Inbooze | Built with MindsDB + Gemini</p>
+  </footer>
+</body>
+</html>

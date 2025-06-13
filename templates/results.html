@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Search Results</h2>
+
+{% if results %}
+  {% for email in results %}
+    <div class="email">
+      <p><strong>From:</strong> {{ email.metadata.sender }}</p>
+      <p><strong>Subject:</strong> {{ email.metadata.subject }}</p>
+      <p><strong>Date:</strong> {{ email.metadata.date }}</p>
+      <pre>{{ email.content }}</pre>
+    </div>
+    <hr/>
+  {% endfor %}
+
+  <form method="POST" action="/summarize">
+    <input type="hidden" name="query" value="{{ query }}">
+    <input type="hidden" name="sender" value="{{ sender }}">
+    <button type="submit">Summarize This Thread</button>
+  </form>
+
+{% else %}
+  <p>No results found.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,55 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #666;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+input[type="text"], input[type="file"], button {
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.email {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.summary-box {
+  background: #e6f7ff;
+  padding: 1rem;
+  border-radius: 6px;
+  border-left: 4px solid #1890ff;
+}

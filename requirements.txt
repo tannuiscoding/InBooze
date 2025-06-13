@@ -1,0 +1,4 @@
+Flask==3.0.0
+mindsdb_sdk==1.50.0
+python-dotenv==1.0.1
+google-generativeai==0.5.4

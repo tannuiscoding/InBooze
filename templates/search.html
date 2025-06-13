@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Search Emails</h2>
+<form method="POST">
+  <input type="text" name="query" placeholder="e.g. Emails about payment delays" required>
+  <input type="text" name="sender" placeholder="Optional sender filter (e.g. alice@gmail.com)">
+  <button type="submit">Search</button>
+</form>
+{% endblock %}
