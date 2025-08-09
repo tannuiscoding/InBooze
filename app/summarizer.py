@@ -11,7 +11,7 @@ generation_config = {
     "max_output_tokens": 1024,
 }
 
-model = genai.GenerativeModel("gemini-pro", generation_config=generation_config)
+model = genai.GenerativeModel("gemini-2.0-flash", generation_config=generation_config)
 
 def generate_summary(content):
     try:
