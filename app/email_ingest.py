@@ -65,3 +65,8 @@ def process_mbox_and_insert(filepath):
 
     except Exception as e:
         print(f"[process_mbox_and_insert] Error: {e}")
+
+
+def parse_and_ingest_mbox(filepath):
+    """Compatibility wrapper used by routes. Parses an .mbox and ingests emails."""
+    return process_mbox_and_insert(filepath)
